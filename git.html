@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML学习</title>
+	<style>
+		.kaka {
+			background-color: green;
+			color: red;
+		}
+
+		.kakaka {
+			background-color: red;
+			color: green;
+		}
+
+		#id {
+			background-color: red;
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="background-color: red;font-family: cursive;font-size: 20px;text-align: center;">h这是标题</h1>
+	<p>p是段落标签</p>
+	<a href="www.baidu.com">href是连接标签</a>
+	<p>img是图片标签</p><img src="这是图片">
+	<h2 style="text-align: center;">text-align定义文本对齐方式</h2>
+	<p>hr 定义水平分割线：</p>
+	<hr />
+	<!--这是注释不会显示-->
+	<p>br是换行标签<br />换行了!</p>
+	<p style="font-size:30px;color:red">style 属性用于改变 HTML 元素的样式</p>
+	<p style="background-color: green;color: red">定义背景颜色用background-color避免用bgcolor</p>
+	<p><a href="www.baidu.com"><abbr title="abbr是缩写引用">abbr缩写</abbr></a></p>
+	<p>
+		<h3>表格</h3>
+		<table border="1" cellpadding="10" width="400">
+			<tr style="text-align: left;">
+				<th>姓名</th>
+				<th colspan="2">电话</th>
+			</tr>
+			<tr style="text-align: right;">
+				<td>张狗狗</td>
+				<td>888888</td>
+				<td>999999</td>
+			</tr>
+			<tr>colspan是定义占几列，cellpadding文字与单元格空白</tr>
+		</table>
+		<table border="1" cellspacing="10">
+			<tr>
+				<th>名字</th>
+				<td>张狗狗</td>
+			</tr>
+			<tr>
+				<th rowspan="2">电话</th>
+				<td>999999</td>
+			</tr>
+			<tr>
+				<td>888888</td>
+			</tr>
+			<tr>rowspan是定义占几行，cellspacing单元格距离</tr>
+		</table>
+	</p>
+	<p>
+		<h3>无序列表</h3>
+		<ul>
+			<li>卡卡</li>
+			<ol>
+				<li>
+					07足球先生
+				</li>
+				<li>
+					07欧冠射手王
+				</li>
+			</ol>
+			<li>C罗</li>
+		</ul>
+		<h3>有序列表</h3>
+		<ol>
+			<li>卡卡</li>
+			<li>C罗</li>
+		</ol>
+		<h2>自定义列表</h2>
+		<dl>
+			<dt>卡卡</dt>
+			<dd>07足球先生</dd>
+			<dt>C罗</dt>
+			<dd>超级英雄</dd>
+		</dl>
+	</p>
+	<div class="kaka">
+		<h3>div引用类class属性</h3>
+		<p>这一段文字都会展示class里定义的属性</p>
+	</div>
+	<div class="kakaka">
+		<h3>div引用类class属性</h3>
+	</div>
+	<div>
+		<h3>这是<span class="kakaka">span</span>定义行内元素样式</h3>
+	</div>
+	<div id="id">
+		<h3>啦啦啦</h3>
+	</div>
+	<p>
+		<frameset cols="20%,80%">
+			<frame src="lala"></frame>frameset是框架标签
+		</frameset>
+	</p>
+
+	<form>
+		<fieldset>
+			<legend>组合表单</legend>
+			姓名：<br>
+			<input type="text" name="姓名" value="张狗狗"><br>
+			电话:<br>
+			<input type="text" name="电话" value="888888">
+			<br><br>
+			<input type="submit" value="提交">
+			<br>
+			<input type="radio" name="姓名" value="张狗狗" checked>张狗狗
+			<!--如果要正确地被提交，每个输入字段必须设置一个name 属性。value 是预设显示出的属性-->
+		</fieldset>
+	</form>
+	<form>
+		<select name="名字">
+			<option value="zhang">zhang</option>
+			<option value="liu">liu</option>
+			<option value="zhanggg" selected>zhanggg</option>
+			<!--<select> 元素定义下拉列表.添加 selected 属性来定义预定义选项-->
+		</select>
+	</form>
+	<button type="button" onclick="alert('Hello World!')">点我！</button>
+</body>
+
+</html>
